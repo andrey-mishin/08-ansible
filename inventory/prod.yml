@@ -3,8 +3,15 @@ clickhouse:
   hosts:
     clickhouse-01:
       ansible_port: 2022
-      ansible_user: baloo
+      ansible_user: vagrant
       ansible_host: localhost
       ansible_connection: ssh
-      ansible_ssh_private_key_file: /home/baloo/.ssh/clickhouse
-
+      ansible_ssh_private_key_file: /home/baloo/.git/08-ansible-02-playbook/.vagrant/machines/clickhouse/virtualbox/private_key
+vector:
+  hosts:
+    vector-01:
+      ansible_port: 2122
+      ansible_user: vagrant
+      ansible_host: localhost
+      ansible_connection: ssh
+      ansible_ssh_private_key_file: /home/baloo/.git/08-ansible-02-playbook/.vagrant/machines/vector/virtualbox/private_key
