@@ -53,7 +53,7 @@
             url: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-1.x86_64.rpm"
             dest: "./vector-{{ vector_version }}-1.x86_64.rpm"
           tags:
-            - vdownload
+            - v-down
         - name: Install Vector
           become: true
           ansible.builtin.yum:
@@ -63,4 +63,22 @@
           notify: Start Vector
           ignore_errors: true
           tags:
-            - vinstall
+            - v-inst
+- name: Install Lighthouse
+  hosts: lighthouse
+  tags:
+    - lh-inst
+  pre_tasks:
+    - name: Install Git
+      become: true
+      ansible.builtin.yum:
+        name: git
+      tags:
+        - git-inst
+  tasks:
+    - name: Download Lighthouse
+      ansible.builtin.git:
+        repo: "{{ lighthouse_repo }}"
+        dest: ./lighthouse
+      tags:
+        - lh-down
