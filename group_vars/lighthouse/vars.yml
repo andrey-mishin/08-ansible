@@ -1,2 +1,6 @@
 ---
 lighthouse_repo: "https://github.com/VKCOM/lighthouse.git"
+lighthouse_repo_version: "master"
+lighthouse_location_dir: "/home/centos/lighthouse"
+lighthouse_access_log_name: "lighthouse_access"
+nginx_user_name: "root"

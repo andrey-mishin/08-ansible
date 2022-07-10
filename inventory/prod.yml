@@ -3,20 +3,20 @@ clickhouse:
   hosts:
     clickhouse-01:
       ansible_user: centos
-      ansible_host: 51.250.100.243
+      ansible_host: 51.250.101.143
       ansible_connection: ssh
       ansible_ssh_private_key_file: /home/baloo/.ssh/id_rsa.pub
 vector:
   hosts:
     vector-01:
       ansible_user: centos
-      ansible_host: 158.160.3.174
+      ansible_host: 51.250.102.119
       ansible_connection: ssh
       ansible_ssh_private_key_file: /home/baloo/.ssh/id_rsa.pub
 lighthouse:
   hosts:
     lighthouse-01:
       ansible_user: centos
-      ansible_host: 130.193.55.135
+      ansible_host: 51.250.28.239
       ansible_connection: ssh
       ansible_ssh_private_key_file: /home/baloo/.ssh/id_rsa.pub
