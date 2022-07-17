@@ -11,7 +11,7 @@ resource "yandex_compute_instance" "clickhouse" {
 
   boot_disk {
     initialize_params {
-      image_id = var.centos-7
+      image_id = var.ubuntu-20-04
     }
   }
 
@@ -21,7 +21,7 @@ resource "yandex_compute_instance" "clickhouse" {
   }
 
   metadata = {
-    ssh-keys           = "centos:${file("~/.ssh/id_rsa.pub")}"
+    ssh-keys           = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
     serial-port-enable = 1
   }
 }

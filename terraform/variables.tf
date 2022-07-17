@@ -13,3 +13,7 @@ variable "centos-7" {
 variable "ubuntu-20-04" {
   default = "fd81u2vhv3mc49l1ccbb"
 }
+
+variable "debian-11" {
+  default = "fd83h3kff4ja27ejq0d9"
+}
