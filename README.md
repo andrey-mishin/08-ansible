@@ -10,9 +10,9 @@ yc compute instance list
 +----------------------+------------+---------------+---------+----------------+---------------+
 |          ID          |    NAME    |    ZONE ID    | STATUS  |  EXTERNAL IP   |  INTERNAL IP  |
 +----------------------+------------+---------------+---------+----------------+---------------+
-| epd5sv9dq6lsitcbi88t | vector     | ru-central1-b | RUNNING | 51.250.102.119 | 192.168.10.14 |
-| epdesq8oc342p26m9eqo | lighthouse | ru-central1-b | RUNNING | 51.250.28.239  | 192.168.10.11 |
-| epdo2633f66il4uu6ulj | clickhouse | ru-central1-b | RUNNING | 51.250.101.143 | 192.168.10.4  |
+| epda2pev3ibvgsratsj2 | vector     | ru-central1-b | RUNNING | 84.252.140.18  | 192.168.10.11 |
+| epdji0tj9qfem6mqdr50 | lighthouse | ru-central1-b | RUNNING | 84.201.179.211 | 192.168.10.5  |
+| epdjq08cnajg0re2bpqn | clickhouse | ru-central1-b | RUNNING | 84.201.164.40  | 192.168.10.12 |
 +----------------------+------------+---------------+---------+----------------+---------------+
 ```
 
