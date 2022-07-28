@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: 'Apply Clickhouse Role'
+    - name: "Include vector-role"
       include_role:
-        name: "clickhouse"
+        name: "vector-role"
